@@ -1,0 +1,36 @@
+:root {
+    --grid-size: 1;
+    --cell-size: 1;
+}
+.header {
+    font-family: "Pacifico", serif;
+    font-size: 3rem;
+    text-align: center;
+}
+.menu {
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.draw_toggle_label {
+    margin-right: 1rem;
+}
+.board {
+    margin: auto;
+    width: min-content;
+    height: min-content;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(var(--grid-size), 1fr);
+    grid-template-rows: repeat(var(--grid-size), 1fr);
+    border: 1px solid black;
+}
+.cell {
+    border: 1px solid black;
+    text-align: center;
+    width: var(--cell-size);
+    height: var(--cell-size);
+}
+.cell_draw {
+    background-color: blue;
+}
